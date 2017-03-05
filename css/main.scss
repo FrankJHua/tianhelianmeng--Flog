@@ -1,0 +1,606 @@
+@import "common";
+@import "animation";
+
+.pages{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+//index
+.index{
+    width: 100%;
+    height: 100%;
+    background: url($URL + "index-bg.jpg") 0 0  no-repeat;
+    @include prefixer(background-size, 100% 100%);
+    overflow: hidden;
+    .index-title{
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        position: absolute;
+        top: 5%;
+        & > img:first-child{
+            width: REM(419);
+            height: REM(101);
+            margin-bottom: REM(10);
+        }
+        & > img:nth-child(2){
+            width: REM(506);
+            height: REM(106);
+        }
+    }
+    .index-btn{
+        top: 80%;
+    }
+    .clouds{
+        position: absolute;
+        width: 100%;
+        height: 18%;
+        top: 55%;
+        overflow: hidden;
+        & > img:nth-child(1){
+            position: absolute;
+            width: REM(244);
+            left: 30%;
+            top: 30%;
+        }
+        & > img:nth-child(2){
+            position: absolute;
+            width: REM(95);
+            right: 0;
+        }
+    }
+}
+
+//page1
+.page1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .p1-dark{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url($URL + "p1-bg-dark.jpg") 0 0 no-repeat;
+        @include prefixer(background-size, 100% 100%);
+        z-index: 200;
+    }
+    .hand{
+        width: REM(163);
+        height: REM(247);
+        position: relative;
+        top: 40%;
+        margin: 0 auto;
+        z-index: 500;
+     }
+     .p1-dark-txt{
+         width: 100%;
+         height: 100%;
+     }
+     #arrow-black-left{
+         width: REM(53);
+         height: REM(23);
+         position: absolute;
+         top: 40%;
+     }
+     #arrow-black-right{
+         width: REM(53);
+         height: REM(23);
+         position: absolute;
+         top: 38%;
+         right: 0;
+     }
+    .p1-bright{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url($URL + "p1-bg-bright.jpg") 0 0 no-repeat;
+        @include prefixer(background-size, 100% 100%);
+        z-index: 100;
+    }
+    .p1-bright-txt{
+        width: REM(363);
+        height: auto;
+        position: absolute;
+        left: 12%;
+        top: 5%;
+        & > img{
+            height: REM(60);
+        }
+    }
+    .p1-tip{
+        position: absolute;
+        top: 85%;
+        width: 100%;
+        text-align: center;
+        font-size: REM(30);
+        color: #fff;
+        z-index: 200;
+    }
+    .frogs{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 300;
+        overflow: hidden;
+        >img {
+          width: 100%;
+          height: 100%;
+        }
+    }
+    /*.frog-left,.frog-right{
+        position: absolute;
+        top: -20%;
+        width: 100%;
+        height: 120%;
+        z-index: 300;
+    }
+    .frog-left{
+        left: 0;
+    }
+    .frog-right{
+        right: 0;
+    }*/
+}
+
+//page2
+.page2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url($URL + "p2-bg.jpg") 0 0 no-repeat;
+    @include prefixer(background-size, 100% 100%);
+    .p2-txt-wrap{
+        position: relative;
+        top: 59%;
+        width: REM(366);
+        height: REM(174);
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .p2-txt{
+        width: 100%;
+        height: 25%;
+        background-image: url(../images/p2-txt.png);
+        background-repeat: no-repeat;
+        @include prefixer(background-size,100% 400%);
+    }
+    .p2-txt:nth-child(1){
+        background-position: 0 0;
+    }
+    .p2-txt:nth-child(2){
+        background-position: 0 33%;
+    }
+    .p2-txt:nth-child(3){
+        background-position: 0 65%;
+    }
+    .p2-txt:nth-child(4){
+        background-position: 0 99%;
+    }
+    .p2-btn{
+        top: 61%;
+    }
+}
+
+//page3
+.page3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url($URL + "bg.jpg") 0 REM(-20) no-repeat;
+    @include prefixer(background-size, 100% 110%);
+    .p3-top-txt{
+        position: relative;
+        width: REM(564);
+        height: 20%;
+        margin: REM(60) auto REM(10);
+        background: url($URL + "p3-top-txt.png") 0 0 no-repeat;
+        @include prefixer(background-size, 100% 100%);
+        z-index: 9999;
+    }
+    .p3-trip-select{
+        width: 100%;
+        height: 65%;
+        position: absolute;
+        top: 22%;
+    }
+    .arrow{
+        width: REM(26);
+        height: REM(50);
+        padding: REM(10);
+        position: absolute;
+        top: 45%;
+        & > img{
+            width: 100%;
+            height: 100%;
+         }
+    }
+    .left{
+        left: 0;
+    }
+    .right{
+        right: 0;
+    }
+    .p3-trip-type{
+        width: REM(546);
+        height: 100%;
+        padding: 0 REM(26);
+        margin: 0 auto;
+        overflow: hidden;
+        background: url($URL + "p3-pic-border.png") 0 0 no-repeat;
+        @include prefixer(background-size, 100% 100%);
+    }
+    .p3-trip-view{
+        position: relative;
+        top: 12%;
+        width: REM(500);
+        height: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+        & > img{
+            width: 100%;
+            height: 100%;
+//          z-index: 9999;
+        }
+    }
+    .p3-bottom-txt{
+        position: absolute;
+        top: 85%;
+        width: REM(546);
+        height: 5%;
+        padding: REM(10) 0;
+        margin: 0 auto;
+        & > img{
+
+            width: REM(350);
+            height: REM(28);
+            margin: 0 auto;
+        }
+    }
+    .bar{
+        position: absolute;
+        top: 94%;
+        width: REM(546);
+        height: REM(6);
+        margin: REM(6) auto 0;
+    }
+    .p3-tip{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 35%;
+        font-size: REM(30);
+        color:#fff;
+//      z-index: 200;
+    }
+    .bar1{
+        background-color: #62c7f7;
+    }
+    .bar2{
+        background-color: #62a484;
+    }
+    .bar3{
+        background-color: #5693c3;
+    }
+    .p3-confirm{
+        position: absolute;
+        top: 88%;
+        width: 100%;
+        height: REM(98);
+        text-align: center;
+    }
+}
+
+//page4
+.page4{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    background: url($URL + "bg.jpg") 0 REM(-20) no-repeat;
+    @include prefixer(background-size, 100% 110%);
+    .beach,.forest,.city{
+        width: 100%;
+        height: 80%;
+    }
+    .p4-top-txt{
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        top: 6%;
+        text-align: center;
+        & > img{
+            width: REM(500);
+        }
+    }
+    .p4-middle{
+        position: relative;
+        top: 32%;
+        width: REM(559);
+        height: REM(420);
+        margin: 0 auto;
+        & > img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .route-items{
+        width: 100%;
+//      height: REM(560);
+        height: 65%;
+        position: absolute;
+        top: 40%;
+        z-index: 100;
+        background: url($URL + "bg-cloud.png") 0 0 no-repeat;
+        @include prefixer(background-size, 100% 100%);
+        & > ul{
+            width: 100%;
+            height: REM(328);
+            position: relative;
+            top: 28%;
+            & > li{
+                display: block;
+                height: 15%;
+                padding: REM(10) 0;
+                margin: REM(5) 0;
+                text-align: center;
+                font-size: REM(26);
+                color: #fff;
+                background-color: #0a507e;
+            }
+            & > li:first-child{
+                @include prefixer(opacity,0.9);
+            }
+        }
+    }
+    .selected{
+        background-color: #87cdff !important;
+        color: #0a507e !important;
+    }
+    .p4-confirm{
+        position: absolute;
+        top: 75%;
+        width: 100%;
+        height: REM(98);
+        text-align: center;
+    }
+}
+
+//page5
+.page5{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #000 url($URL + "p5-bg.jpg") center bottom no-repeat;
+    @include prefixer(background-size, 100% 80%);
+    .route-level{
+        width: REM(302);
+        height: REM(228);
+        margin: 0 auto;
+        & > img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .route{
+        width: 100%;
+        height: REM(314);
+        position: absolute;
+        top: 26%;
+        background: url($URL + "p5-road.png") 0 bottom no-repeat;
+        @include prefixer(background-size, 100% 50%);
+        & > li{
+            position: absolute;
+            text-align: center;
+            font-size: REM(25);
+            color: #ffa200;
+            font-weight: 600;
+        }
+        & > li:nth-child(1){
+            top: 25%;
+            left: 5%;
+        }
+        & > li:nth-child(2){
+            top: 56%;
+            left: 22%;
+        }
+        & > li:nth-child(3){
+            top: 25%;
+            left: 42%;
+        }
+        & > li:nth-child(4){
+            top: 56%;
+            left: 60%;
+        }
+        & > li:nth-child(5){
+            left: 80%;
+            top: 25%;
+        }
+    }
+    .location{
+        width: REM(47);
+        height: REM(74);
+    }
+    .indexs-wrap{
+        width: 93%;
+        position: absolute;
+        top: 60%;
+        padding: REM(30) REM(20);
+        background: url($URL + "p5-star-bg.png") 0 0 no-repeat;
+        @include prefixer(background-size, 100% 100%);
+    }
+    .index-txt{
+        width: REM(194);
+        height: REM(106);
+        margin-left: REM(30);
+        float: left;
+        & > img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .route-result{
+        width: 100%;
+        position: absolute;
+        top: 85%;
+        text-align: center;
+        & > button{
+            width: REM(302);
+            height: REM(98);
+            border: none;
+            margin: 0 auto;
+            background: url(../images/route-result-btn.png) 0 0 no-repeat;
+            @include prefixer(background-size, contain);
+        }
+    }
+    .stars{
+        width: REM(265);
+        height: REM(118);
+        float: left;
+        margin-left: REM(20);
+    }
+    .green-stars,.leisure-stars{
+        width: 130%;
+        height: 50%;
+        & > li{
+            width: REM(58);
+            height: REM(56);
+            float: left;
+            margin-right: REM(10);
+            & > img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+//page6
+.page6{
+    width: 100%;
+    height: 100%;
+    background: url($URL + "bg.jpg") 0 REM(-20) no-repeat;
+    @include prefixer(background-size, 100% 110%);
+    .poster{
+        width: REM(588);
+        height: REM(635);
+        position: relative;
+        top: 3%;
+        margin: 0 auto;
+        background:  url($URL + "poster.png") 0 0 no-repeat;
+        @include prefixer(background-size, cover);
+    }
+    .poster-title{
+        width: REM(457);
+        height: REM(33);
+        margin: 0 auto;
+        position: relative;
+        top: 16%;
+        background: url($URL + "poster-title.png") 0 0 no-repeat;
+        @include prefixer(background-size, contain);
+    }
+    .frog{
+        width: REM(230);
+        height: REM(230);
+        position: relative;
+        top: 20%;
+        line-height: REM(230);
+        margin: 0 auto;
+        @include prefixer(border-radius,50%);
+        text-align: center;
+        background-color: #dbd0a6;
+        color: #031820;
+        font-size: REM(100);
+    }
+    .poster-content{
+        width: REM(447);
+        position: relative;
+        top: 24%;
+        margin: 0 auto;
+        color: #000;
+        font-size: REM(30);
+        text-align: center;
+    }
+    .share-tip{
+        width: 100%;
+        height: REM(70);
+        position: absolute;
+        top: 62%;
+        text-align: center;
+        background: rgba(0,0,0,.5);
+        padding: REM(15) 0;
+        & > img{
+            width: REM(500);
+            height: 100%;
+        }
+    }
+    .p6-btns{
+        width: 100%;
+        height: REM(210);
+        position: absolute;
+        top: 76%;
+    }
+    .p6-btn{
+        position: absolute;
+        width: REM(302);
+        height: REM(98);
+        left: REM((640-302)/2);
+        &:nth-child(1){
+            background: url($URL + "share-btn.png") 0 0 no-repeat;
+            @include prefixer(background-size, contain);
+        }
+        &:nth-child(2){
+            bottom: 0;
+            background: url($URL + "start-trip-btn.png") 0 0 no-repeat;
+            @include prefixer(background-size, contain);
+        }
+    }
+}
+
+.share{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,.8);
+    & > img{
+        width: REM(376);
+        height: REM(225);
+        margin-right: REM(30);
+        float: right;
+    }
+}
+
+//public
+.index-btn, .p2-btn{
+    width: REM(296);
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    & > button{
+        display: block;
+        width: 100%;
+        height: REM(100);
+        line-height: REM(100);
+        font-size: REM(35);
+        color: #fff;
+        border: none;
+        background: url($URL + "btn-bg.png") 0 0  no-repeat;
+        @include prefixer(background-size, cover);
+    }
+}
+.confirm-btn{
+    display: inline-block;
+    width: REM(302);
+    height: 100%;
+    background: url(../images/confirm-btn.png) 0 0 no-repeat;
+    @include prefixer(background-size, 100% 100%);
+}

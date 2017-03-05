@@ -1,0 +1,77 @@
+@import "common";
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background: url($URL + "bg.jpg") 0 REM(-20) no-repeat;
+    @include prefixer(background-size, 100% 110%);
+}
+.poster{
+    width: REM(640);
+    height: REM(728);
+    position: relative;
+    top: 3%;
+    margin: 0 auto;
+    background:  url($URL + "poster-big.png") 0 0 no-repeat; 
+    @include prefixer(background-size, cover);
+    font-size: REM(30);
+    color: #000;
+}
+.poster-title{
+    width: REM(457);
+    height: REM(33);
+    margin: 0 auto;
+    position: relative;
+    top: 16%;
+    background: url($URL + "poster-title.png") 0 0 no-repeat;
+    @include prefixer(background-size, contain);
+}
+.poster-top{
+    width: REM(524);
+    height: REM(154);
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+    overflow: hidden;
+    .title{
+        height: REM(145);
+        line-height: REM(145);
+        float: left;
+    }
+    .user-head{
+        width: REM(145);
+        height: REM(145);
+        border: REM(4) solid #000;
+        float: right;
+        & > img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.content{
+    width: REM(524);
+    position: relative;
+    top: 15%;
+    margin: 0 auto;
+    text-indent: REM(32);
+    .frog-num{
+        font-size: REM(40);
+        font-weight: bold;
+        vertical-align: bottom;
+    }
+}
+.join{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 80%;
+    .join-btn{
+        display: block;
+        width: REM(302);
+        height: REM(98);
+        margin: 0 auto;
+        background: url(../images/join-btn.png) 0 0 no-repeat;
+        @include prefixer(background-size,contain);
+    }
+}

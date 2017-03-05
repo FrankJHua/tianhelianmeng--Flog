@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<title>在新年旅行,一起告别雾霾!</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+	<body>
+		<div class="pages" style="visibility: hidden;">
+			<!--首页-->
+			<div class="index ">
+				<div class="index-title">
+					<img src="images/index-txt1.png" class="index-txt1 hide animated"/>
+					<img src="images/index-txt2.png" class="index-txt2 hide animated"/>
+				</div>
+				<div class="clouds">
+					<img src="images/index-cloud-big.png" />
+					<img src="images/index-cloud-small.png" />
+				</div>
+				<div class="index-btn hide">
+					<button>我要告别雾霾</button>
+				</div>
+			</div>
+			<!--第一页-->
+			<div class="page1 hide animated500">
+
+
+
+				<div class="frogs">
+
+					<img src="images/img-frog.png" class="img-frogs" />
+				</div>
+
+				<div class="hand animated">
+					<img class="p1-dark-txt" src="images/hand.png" />
+				</div>
+
+				<div class="p1-bright">
+					<div class="p1-bright-txt">
+						<img src="images/p1-bright-txt1.png" class="p1-bright-txt1 animated10000"/>
+						<img src="images/p1-bright-txt2.png" class="p1-bright-txt2 animated17000"/>
+						<img src="images/p1-bright-txt3.png" class="p1-bright-txt3 animated14000"/>
+					</div>
+				</div>
+				<canvas id="frogCvs" class="hide"></canvas>
+				<p class="p1-tip hide animated">点击画面进入下一页</p>
+			</div>
+			<!--第二页-->
+			<div class="page2 hide animated500">
+				<ul class="p2-txt-wrap">
+					<li class="p2-txt hide animated800"></li>
+					<li class="p2-txt hide animated800"></li>
+					<li class="p2-txt hide animated800"></li>
+					<li class="p2-txt hide animated800"></li>
+				</ul>
+				<div class="p2-btn hide animated">
+					<button>定制逃离计划</button>
+				</div>
+			</div>
+			<!--第三页-->
+			<div class="page3 hide animated500">
+				<div class="p3-top-txt hide animated1200"></div>
+				<div class="p3-trip-select">
+					<div class="arrow left"><img src="images/arrow-left.png"/></div>
+					<div class="p3-trip-type">
+						<div class="p3-trip-view">
+							<img src="images/beach/p3-item.jpg" class="hide fadeIn animated500"/>
+							<img src="images/forest/p3-item.jpg" class="hide animated500" />
+							<img src="images/city/p3-item.jpg" class="hide animated500"/>
+						</div>
+						<div class="p3-bottom-txt bar1">
+							<img src="images/beach/p3-bottom-txt.png" class="hide fadeIn"/>
+							<img src="images/forest/p3-bottom-txt.png" class="hide"/>
+							<img src="images/city/p3-bottom-txt.png" class="hide"/>
+						</div>
+						<div class="bar bar1"></div>
+					</div>
+					<div class="arrow right"><img src="images/arrow-right.png"/></div>
+				</div>
+				<div class="p3-confirm animated hide">
+					<a href="#" class="confirm-btn"></a>
+				</div>
+				<p class="p3-tip hide animated">左右滑动，进行选择</p>
+			</div>
+			<!--第四页-->
+			<div class="page4 hide animated500">
+				<div class="beach hide">
+					<div class="p4-top-txt hide animated1200"><img src="images/beach/p4-top-txt.png"/></div>
+					<div class="p4-middle hide animated1200"><img src="images/beach/p4-middle.jpg"/></div>
+				</div>
+				<div class="forest hide">
+					<div class="p4-top-txt hide animated1200"><img src="images/forest/p4-top-txt.png"/></div>
+					<div class="p4-middle hide animated1200"><img src="images/forest/p4-middle.jpg"/></div>
+				</div>
+				<div class="city hide">
+					<div class="p4-top-txt hide animated1200"><img src="images/city/p4-top-txt.png"/></div>
+					<div class="p4-middle hide animated1200"><img src="images/city/p4-middle.jpg"/></div>
+				</div>
+				<div class="route-items hide">
+					<ul class="triptype1">
+						<li><p class="item1 hide animated500">中国-奥克兰-洛杉矶-阿姆斯特丹-中国</p></li>
+						<li class=""><p class="item2 hide animated500">中国-墨尔本-旧金山-毛里求斯-中国</p></li>
+						<li><p class="item3 hide animated500">中国-布里斯班-阿姆斯特丹-纽约-中国</p></li>
+						<li><p class="item4 hide animated500">中国-毛里求斯-洛杉矶-阿姆斯特丹-中国</p></li>
+					</ul>
+					<div class="p4-confirm hide animated">
+						<a href="#" class="confirm-btn"></a>
+					</div>					
+				</div>
+				<div class="route-items hide">
+					<ul class="triptype2">
+						<li><p class="item1 hide animated500">中国-雅加达-温哥华-毛里求斯-中国</p></li>
+						<li class=""><p class="item2 hide animated500">中国-内罗毕-帕斯-多伦多-中国</p></li>
+						<li><p class="item3 hide animated500">中国-帕斯-毛里求斯-多伦多-中国</p></li>
+						<li><p class="item4 hide animated500">中国-温哥华-内罗毕-雅加达-中国</p></li>
+					</ul>
+					<div class="p4-confirm hide animated800">
+						<a href="#" class="confirm-btn"></a>
+					</div>					
+				</div>
+				<div class="route-items hide">
+					<ul class="triptype3">
+						<li><p class="item1 hide animated500">中国-悉尼-纽约-巴黎-中国</p></li>
+						<li class=""><p class="item2 hide animated500">中国-罗马-温哥华-东京-中国</p></li>
+						<li><p class="item3 hide animated500">中国-伦敦-纽约-首尔-中国</p></li>
+						<li><p class="item4 hide animated500">中国-旧金山-巴黎-台北-中国</p></li>
+					</ul>
+					<div class="p4-confirm hide animated800">
+						<a href="#" class="confirm-btn"></a>
+					</div>
+				</div>
+			</div>
+			<!--第五页-->
+			<div class="page5 hide">
+				<div class="route-level hide animated800">
+					<img src="images/route-level.png" />
+				</div>
+				<ul class="route">
+					<li class="hide animated500"><span></span><br/><img class="location" src="images/p5-location.png"/></li>
+					<li class="hide animated500"><span></span><br/><img class="location" src="images/p5-location.png"/></li>
+					<li class="hide animated500"><span></span><br/><img class="location" src="images/p5-location.png"/></li>
+					<li class="hide animated500"><span></span><br/><img class="location" src="images/p5-location.png"/></li>
+					<li class="hide animated500"><span></span><br/><img class="location" src="images/p5-location.png"/></li>
+				</ul>
+				<!--指数-->
+				<div class="indexs-wrap hide animated800">
+					<div class="index-txt">
+						<img src="images/p5-star-txt.png" />
+					</div>
+					<div class="stars">
+						<ul class="green-stars">
+							<li><img src="images/p5-star-black.png"/></li>
+							<li><img src="images/p5-star-black.png"/></li>
+							<li><img src="images/p5-star-black.png"/></li>
+							<li><img src="images/p5-star-black.png"/></li>
+							<li><img src="images/p5-star-black.png"/></li>
+						</ul>
+						<ul class="leisure-stars">
+							<li><img src="images/p5-star-black.png"/></li>
+							<li><img src="images/p5-star-black.png"/></li>
+							<li><img src="images/p5-star-black.png"/></li>
+							<li><img src="images/p5-star-black.png"/></li>
+							<li><img src="images/p5-star-black.png"/></li>
+						</ul>
+					</div>
+				</div>
+				<div class="route-result">
+					<button class="trip-result-btn hide animated500"></button>
+				</div>
+			</div>
+			<!--第六页-->
+			<div class="page6 hide">
+				<div class="poster">
+					<div class="poster-title hide animated"></div>
+					<div class="frog hide animated"></div>
+					<div class="poster-content hide animated1200">
+						<p class="poster-txt"></p>
+					</div>
+				</div>
+				<div class="share-tip hide animated1200">
+					<img src="images/share-tip-txt.png" />
+				</div>
+				<div class="p6-btns">
+					<a href="#" class="p6-btn hide animated" id="to-share"></a>
+					<a class="p6-btn hide animated" href="http://front.jimicngame.com/Bonnie/SkyTeam/transWorld/index.html"></a>
+				</div>
+			</div>
+
+		</div>
+		<!--弹窗-->
+		<div class="share hide">
+			<img src="images/alert-share.png" />
+		</div>
+		<script src="js/jquery-1.12.4.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			jQuery.noConflict(false);
+		</script>
+		<script src="js/jquery.eraser.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		<script>
+			//预加载
+			var basep = "images/",//图片目录
+				preLoadSource = [ //背景资源
+					"index-bg.jpg",
+					"index-txt1.png",
+					"index-txt2.png",
+					"index-cloud-big.png",
+					"index-cloud-small.png",
+					"btn-bg.png",
+					"img-frog.png",
+					"hand.png",
+					"p1-bg-bright.jpg",
+					"p1-bright-txt1.png",
+					"p1-bright-txt2.png",
+					"p1-bright-txt2.png",
+					"p2-bg.jpg",
+					"p2-txt.png",
+					"bg.jpg",
+					"p3-top-txt.png",
+					"arrow-left.png",
+					"arrow-right.png",
+					"p3-pic-border.png",
+					"confirm-btn.png",
+					"beach/p3-item.jpg",
+					"beach/p3-bottom-txt.png",
+					"city/p3-item.jpg",
+					"city/p3-bottom-txt.png",
+					"forest/p3-item.jpg",
+					"forest/p3-bottom-txt.png",
+					"bg-cloud.png",
+					"beach/p4-top-txt.png",
+					"beach/p4-middle.jpg",
+					"forest/p4-top-txt.png",
+					"forest/p4-middle.jpg",
+					"city/p4-top-txt.png",
+					"city/p4-middle.jpg",
+					"route-level.png",
+					"p5-road.png",
+					"p5-location.png",
+					"p5-star-bg.png",
+					"p5-star-txt.png",
+					"p5-star-black.png",
+					"p5-star-yellow.png",
+					"route-result-btn.png",
+					"poster.png",
+					"poster-title.png",
+					"share-tip-txt.png",
+					"share-btn.png",
+					"start-trip-btn.png",
+					"alert-share.png"
+				];
+				function initPages(){
+					$(".pages").css("visibility","visible");
+					pageIndex();
+
+				}
+		</script>
+
+		<script type="text/javascript" src="js/loading.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+		<script type="text/javascript" src="js/touch.js" ></script>
+	</body>
+</html>
