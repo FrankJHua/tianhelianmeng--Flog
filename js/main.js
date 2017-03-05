@@ -213,15 +213,8 @@ $(function(){
 		$(".index").addClass("hide");
 		$(".page1").addClass("fadeIn");
 		console.log(jQuery('.img-frogs').eraser({size:60}));
-//		page1Dark();
 	});
 
-	//第一页
-	//拨开迷雾
-	/*touch.on(".frogs","pinchout",function(e){
-		e.preventDefault();
-		f_pinchout();
-	});*/
 	$('.frogs').on('touchstart',function(){
 		console.log(1);
 		$(".hand").fadeOut(500);
